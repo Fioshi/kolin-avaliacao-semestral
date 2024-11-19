@@ -1,14 +1,15 @@
-package com.github.Fioshi.gs_kotlin
+package com.github.Fioshi.gs_kotlin.dicaViewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import androidx.room.Room
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import nellefb.com.github.listadecompras.ItemDao
+import com.github.Fioshi.gs_kotlin.dicaData.ItemDao
+import com.github.Fioshi.gs_kotlin.dicaData.ItemDatabase
+import com.github.Fioshi.gs_kotlin.dicaModel.ItemModel
 
 
 class ItemsViewModel(application: Application) : AndroidViewModel(application) {

@@ -1,4 +1,4 @@
-package com.github.Fioshi.gs_kotlin
+package com.github.Fioshi.gs_kotlin.dicaViewModel
 
 
 import android.app.Application

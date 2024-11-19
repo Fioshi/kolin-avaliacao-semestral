@@ -1,9 +1,9 @@
-package com.github.Fioshi.gs_kotlin
+package com.github.Fioshi.gs_kotlin.dicaData
 
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import nellefb.com.github.listadecompras.ItemDao
+import com.github.Fioshi.gs_kotlin.dicaModel.ItemModel
 
 @Database(entities = [ItemModel::class], version = 2)
 abstract class ItemDatabase : RoomDatabase() {

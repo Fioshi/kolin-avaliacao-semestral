@@ -9,6 +9,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
+import com.github.Fioshi.gs_kotlin.dicaViewModel.ItemsAdapter
+import com.github.Fioshi.gs_kotlin.dicaViewModel.ItemsViewModel
+import com.github.Fioshi.gs_kotlin.dicaViewModel.ItemsViewModelFactory
 
 
 class MainActivity : AppCompatActivity() {
@@ -59,7 +62,6 @@ class MainActivity : AppCompatActivity() {
             itemsAdapter.updateItems(items)
         }
 
-        // Configurar o SearchView
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 query?.let {

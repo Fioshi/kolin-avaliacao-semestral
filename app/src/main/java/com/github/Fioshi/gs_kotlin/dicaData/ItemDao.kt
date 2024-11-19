@@ -1,11 +1,11 @@
-package nellefb.com.github.listadecompras
+package com.github.Fioshi.gs_kotlin.dicaData
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.github.Fioshi.gs_kotlin.ItemModel
+import com.github.Fioshi.gs_kotlin.dicaModel.ItemModel
 
 @Dao
 interface ItemDao {
